@@ -7,6 +7,7 @@ body {
   font-family: 'Rubik', sans-serif;
   background: #222;
   /* background-image: url('https://source.unsplash.com/1600x900/?nature,water'); */
+  background-size: auto;
 }
 
 

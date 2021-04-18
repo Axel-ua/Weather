@@ -19,7 +19,11 @@ let weather = {
         document.querySelector(".city").innerText = "Weather in " + name;
         document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".description").innerText = description;
-        document.querySelector(".temp").innerText = temp + "°C";
+        let tempInt = parseInt(temp)
+        if (tempInt == NaN)
+        console.log("error")
+        else
+        document.querySelector(".temp").innerText = Math.trunc (tempInt) + "°C";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind speed: " + speed + " km/h"; 
         document.querySelector(".weather").classList.remove("loading");
